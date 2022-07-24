@@ -11,7 +11,7 @@ class Gotorrent < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ismaelpadilla/gotorrent/releases/download/v0.1.0/gotorrent_0.1.0_macOS_x86_64.tar.gz"
-      sha256 "c783e6c4b8a5d0ddb083c32ad62ed8c1ae32093004d34524c9e36c12918d646b"
+      sha256 "dae04b69f6d3cba8b57ba6c6bbd11091cf1acee47d6c69c693160655ce985747"
 
       def install
         bin.install "gotorrent"
@@ -19,7 +19,7 @@ class Gotorrent < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ismaelpadilla/gotorrent/releases/download/v0.1.0/gotorrent_0.1.0_macOS_arm64.tar.gz"
-      sha256 "fdd4c3a2149451e949805a22fe2a41ca8ced69f290b6b39796db5cda78dce436"
+      sha256 "6aa65cda868f3af75a06d5b215969c022e3346af20b9e9052d558f843f6d7053"
 
       def install
         bin.install "gotorrent"
@@ -30,7 +30,7 @@ class Gotorrent < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/ismaelpadilla/gotorrent/releases/download/v0.1.0/gotorrent_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "bb44aa4cc2955cdd34e26022f33c4bdc9b0c28b5cc01fb6e4cd252f4326758f0"
+      sha256 "9dc21f79028165fb72303add1e5b12e26d3e2c7b2ab0808429912564897b1f23"
 
       def install
         bin.install "gotorrent"
@@ -38,7 +38,7 @@ class Gotorrent < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ismaelpadilla/gotorrent/releases/download/v0.1.0/gotorrent_0.1.0_Linux_arm64.tar.gz"
-      sha256 "b13bf6624578b55b74ac0263aad974a4b699fa933406078e05c44c0d0b5e26d3"
+      sha256 "74c0bd6cb59ac2c3f49dd2895c30c41b99e69ef23f5ade3b20299fec14ba3dd7"
 
       def install
         bin.install "gotorrent"
