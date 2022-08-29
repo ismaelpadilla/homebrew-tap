@@ -5,21 +5,21 @@
 class Gotorrent < Formula
   desc "TUI for searching torrents"
   homepage "https://github.com/ismaelpadilla/gotorrent"
-  version "0.1.0"
+  version "0.1.1"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ismaelpadilla/gotorrent/releases/download/v0.1.0/gotorrent_0.1.0_macOS_x86_64.tar.gz"
-      sha256 "dae04b69f6d3cba8b57ba6c6bbd11091cf1acee47d6c69c693160655ce985747"
+      url "https://github.com/ismaelpadilla/gotorrent/releases/download/v0.1.1/gotorrent_0.1.1_macOS_x86_64.tar.gz"
+      sha256 "ec7576e6e3e1f6a087894d2cb1e206faa9928eb23eb93756661b8187610bd649"
 
       def install
         bin.install "gotorrent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ismaelpadilla/gotorrent/releases/download/v0.1.0/gotorrent_0.1.0_macOS_arm64.tar.gz"
-      sha256 "6aa65cda868f3af75a06d5b215969c022e3346af20b9e9052d558f843f6d7053"
+      url "https://github.com/ismaelpadilla/gotorrent/releases/download/v0.1.1/gotorrent_0.1.1_macOS_arm64.tar.gz"
+      sha256 "5c315b7ad5d75edfbd4623e7009b83d49456c937a24f36d5df0ae3fcc7d44a65"
 
       def install
         bin.install "gotorrent"
@@ -29,16 +29,16 @@ class Gotorrent < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ismaelpadilla/gotorrent/releases/download/v0.1.0/gotorrent_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "9dc21f79028165fb72303add1e5b12e26d3e2c7b2ab0808429912564897b1f23"
+      url "https://github.com/ismaelpadilla/gotorrent/releases/download/v0.1.1/gotorrent_0.1.1_Linux_x86_64.tar.gz"
+      sha256 "1fccf1aa505811792e547a7b099d98b4d3188617167711e5333e5716ac8ac754"
 
       def install
         bin.install "gotorrent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ismaelpadilla/gotorrent/releases/download/v0.1.0/gotorrent_0.1.0_Linux_arm64.tar.gz"
-      sha256 "74c0bd6cb59ac2c3f49dd2895c30c41b99e69ef23f5ade3b20299fec14ba3dd7"
+      url "https://github.com/ismaelpadilla/gotorrent/releases/download/v0.1.1/gotorrent_0.1.1_Linux_arm64.tar.gz"
+      sha256 "2a8f914fb2df00b68100f827f63ea5f407e2bc3d3587c20055fe558e53400733"
 
       def install
         bin.install "gotorrent"
